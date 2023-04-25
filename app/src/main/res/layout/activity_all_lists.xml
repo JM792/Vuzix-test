@@ -4,8 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AllLists">
+    tools:context=".AllListsActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtListName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="List Name:"/>
+
+            <TextView
+                android:id="@+id/listName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_toRightOf="@+id/txtListName"/>
+
+            <TextView
+                android:id="@+id/txtItemNum"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Containing items:"
+                android:layout_below ="@+id/txtListName"
+                />
+
+            <TextView
+                android:id="@+id/ItemNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="# Items"
+                android:layout_below="@+id/listName"
+                android:layout_toRightOf="@+id/txtItemNum"
+                />
+
+            <TextView
+                android:id="@+id/txtListComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed:"
+                android:layout_below="@+id/txtItemNum"
+                />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtListComplete"
+                android:layout_below="@+id/ItemNum"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                app:trackThickness="5dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

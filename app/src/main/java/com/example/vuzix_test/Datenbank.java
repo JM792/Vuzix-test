@@ -11,8 +11,6 @@ public class Datenbank {
     public static synchronized Datenbank getInstance() {
         if (null != instance){ // initiate database
             instance = new Datenbank();
-        } else{
-
         }
         return instance;
     }
