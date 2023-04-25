@@ -1,9 +1,12 @@
 package com.example.vuzix_test;
 
+import java.util.Date;
+
 public class List {
 
     private String name;
     private String description;
+    private Date deadline;
 
     private int itemNum;
     private int listId;

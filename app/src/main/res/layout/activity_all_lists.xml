@@ -42,7 +42,7 @@
                 />
 
             <TextView
-                android:id="@+id/ItemNum"
+                android:id="@+id/itemNum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="# Items"
@@ -62,10 +62,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/txtListComplete"
-                android:layout_below="@+id/ItemNum"
+                android:layout_below="@+id/itemNum"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="5dp"
                 app:trackThickness="5dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtCountDown"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Count Down:"-->
+<!--                android:layout_below="@+id/txtListComplete"-->
+<!--                -->
+
+
 
 
 

@@ -8,10 +8,27 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
+
+    <ImageView
+        android:id="@+id/swipeUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/scroll_up_orange"
+        android:layout_below="@+id/listRecView"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swipe up for more detail"
+        android:textColor="@color/orange"
+        android:layout_below="@+id/swipeUp"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
