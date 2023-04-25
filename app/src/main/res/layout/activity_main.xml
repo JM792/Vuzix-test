@@ -23,12 +23,53 @@
         android:layout_centerHorizontal="true"
         />
     <TextView
+        android:id="@+id/txtSwipeUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="swipe up for more detail"
         android:textColor="@color/orange"
         android:layout_below="@+id/swipeUp"
         android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/swipeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRecView"
+        android:src="@drawable/left_swipe_pink"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last"
+        android:textColor="#66FF0000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/swipeLeft"
+        android:layout_marginTop="17dp"/>
+
+
+   <TextView
+       android:id="@+id/txtNext"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Next"
+       android:textSize="20dp"
+       android:textColor="#66FF0000"
+       android:layout_toLeftOf="@+id/swipeRight"
+       android:layout_marginTop="17dp"
+       />
+
+    <ImageView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRecView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/right_swipe_pink" />
 
 
 </RelativeLayout>

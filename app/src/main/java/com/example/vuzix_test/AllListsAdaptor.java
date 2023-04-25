@@ -1,5 +1,6 @@
 package com.example.vuzix_test;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -9,9 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class AllListsAdaptor extends RecyclerView.Adapter<AllListsAdaptor.ViewHolder>{
 
+
+
     @NonNull
     @Override
     public AllListsAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+//        View view = LayoutInflater.from().inflate(parent, )
         return null;
     }
 
@@ -35,7 +40,7 @@ public class AllListsAdaptor extends RecyclerView.Adapter<AllListsAdaptor.ViewHo
             super(itemView);
 
         itemNum = itemView.findViewById(R.id.itemNum);
-        listName =
+        listName = itemView.findViewById(R.id.listName);
 
 
 

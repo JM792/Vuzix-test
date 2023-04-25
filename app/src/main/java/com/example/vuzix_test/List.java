@@ -6,6 +6,7 @@ public class List {
 
     private String name;
     private String description;
+    //TODO: prob wont need deadline feature
     private Date deadline;
 
     private int itemNum;

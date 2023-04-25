@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,74 +12,119 @@
         android:id="@+id/parent"
         app:cardElevation="8dp"
         app:cardCornerRadius="15dp"
+        android:layout_margin="4dp"
         >
 
         <RelativeLayout
+            android:id="@+id/relativeParent"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            >
-
-            <TextView
-                android:id="@+id/txtListName"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="List Name:"/>
-
-            <TextView
-                android:id="@+id/listName"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:layout_toRightOf="@+id/txtListName"/>
-
-            <TextView
-                android:id="@+id/txtItemNum"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="Containing items:"
-                android:layout_below ="@+id/txtListName"
-                />
-
-            <TextView
-                android:id="@+id/itemNum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="# Items"
-                android:layout_below="@+id/listName"
-                android:layout_toRightOf="@+id/txtItemNum"
-                />
-
-            <TextView
-                android:id="@+id/txtListComplete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Completed:"
-                android:layout_below="@+id/txtItemNum"
-                />
-
-            <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_height="wrap_content">
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/txtListComplete"
-                android:layout_below="@+id/itemNum"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="5dp"
-                app:trackThickness="5dp"/>
+                android:padding="10dp"
+                android:id="@+id/collapsedRel"
+                >
 
-<!--            <TextView-->
-<!--                android:id="@+id/txtCountDown"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Count Down:"-->
-<!--                android:layout_below="@+id/txtListComplete"-->
-<!--                -->
+                <TextView
+                    android:id="@+id/txtListName"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="List Name:"/>
+
+                <TextView
+                    android:id="@+id/listName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_toRightOf="@+id/txtListName"/>
+
+                <TextView
+                    android:id="@+id/txtItemNum"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Containing items:"
+                    android:layout_below ="@+id/txtListName"
+                    />
+
+                <TextView
+                    android:id="@+id/itemNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="# Items"
+                    android:layout_below="@+id/listName"
+                    android:layout_toRightOf="@+id/txtItemNum"
+                    />
+
+                <TextView
+                    android:id="@+id/txtListComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed:"
+                    android:layout_below="@+id/txtItemNum"
+                    />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtListComplete"
+                    android:layout_below="@+id/itemNum"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    app:trackThickness="5dp"/>
 
 
 
 
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/txtCountDown"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="Count Down:"-->
+                <!--                android:layout_below="@+id/txtListComplete"-->
+                <!--                -->
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/collapsedRel"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/expandedRel"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtDesc"
+                    android:text="content"/>
+
+
+
+
+
+
+            </RelativeLayout>
 
         </RelativeLayout>
+
+
 
 
 
@@ -87,4 +132,4 @@
     </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
