@@ -3,7 +3,7 @@ package com.example.vuzix_test;
 import java.util.ArrayList;
 
 public class Datenbank {
-    private static ArrayList<Datenbank> database = new ArrayList<>();
+    private static ArrayList<Datenbank> database;
     private static Datenbank instance;
     private Datenbank() {
     }

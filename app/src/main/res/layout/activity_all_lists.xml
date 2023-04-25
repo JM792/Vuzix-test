@@ -6,130 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".AllListsActivity">
 
-    <androidx.cardview.widget.CardView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parent"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="15dp"
-        android:layout_margin="4dp"
-        >
-
-        <RelativeLayout
-            android:id="@+id/relativeParent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:id="@+id/collapsedRel"
-                >
-
-                <TextView
-                    android:id="@+id/txtListName"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="List Name:"/>
-
-                <TextView
-                    android:id="@+id/listName"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:layout_toRightOf="@+id/txtListName"/>
-
-                <TextView
-                    android:id="@+id/txtItemNum"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Containing items:"
-                    android:layout_below ="@+id/txtListName"
-                    />
-
-                <TextView
-                    android:id="@+id/itemNum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="# Items"
-                    android:layout_below="@+id/listName"
-                    android:layout_toRightOf="@+id/txtItemNum"
-                    />
-
-                <TextView
-                    android:id="@+id/txtListComplete"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Completed:"
-                    android:layout_below="@+id/txtItemNum"
-                    />
-
-                <com.google.android.material.progressindicator.LinearProgressIndicator
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/txtListComplete"
-                    android:layout_below="@+id/itemNum"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="5dp"
-                    app:trackThickness="5dp"/>
+        android:layout_centerInParent="true" />
 
 
+    <ImageView
+        android:id="@+id/swipeUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/scroll_up_orange"
+        android:layout_below="@+id/listRecView"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/txtSwipeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swipe up for more detail"
+        android:textColor="@color/orange"
+        android:layout_below="@+id/swipeUp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/swipeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRecView"
+        android:src="@drawable/left_swipe_pink"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last"
+        android:textColor="#66FF0000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/swipeLeft"
+        android:layout_marginTop="17dp"/>
 
 
+    <TextView
+        android:id="@+id/txtNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="#66FF0000"
+        android:layout_toLeftOf="@+id/swipeRight"
+        android:layout_marginTop="17dp"
+        />
 
-                <!--            <TextView-->
-                <!--                android:id="@+id/txtCountDown"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:text="Count Down:"-->
-                <!--                android:layout_below="@+id/txtListComplete"-->
-                <!--                -->
-
-
-
-
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/collapsedRel"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
-                android:id="@+id/expandedRel"
-                android:visibility="visible"
-                >
-
-                <TextView
-                    android:id="@+id/txtDesc"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Description:"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/txtDesc"
-                    android:text="content"/>
-
-
-
-
-
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-
-
-
-
-
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listRecView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/right_swipe_pink" />
 
 
 </RelativeLayout>

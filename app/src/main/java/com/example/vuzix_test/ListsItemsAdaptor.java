@@ -8,20 +8,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class AllListsAdaptor extends RecyclerView.Adapter<AllListsAdaptor.ViewHolder>{
+public class ListsItemsAdaptor extends RecyclerView.Adapter<ListsItemsAdaptor.ViewHolder>{
 
 
 
     @NonNull
     @Override
-    public AllListsAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ListsItemsAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-//        View view = LayoutInflater.from().inflate(parent, )
+        View view = LayoutInflater.from(parent.getContext()).inflate()
         return null;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AllListsAdaptor.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ListsItemsAdaptor.ViewHolder holder, int position) {
 
     }
 

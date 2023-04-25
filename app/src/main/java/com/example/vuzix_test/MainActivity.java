@@ -1,6 +1,7 @@
 package com.example.vuzix_test;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView txtSwipeUp;
     private ImageView swipeUp;
+    private RecyclerView listRecView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
