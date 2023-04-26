@@ -47,8 +47,9 @@
         android:text="Last"
         android:textColor="#66FF0000"
         android:textSize="20dp"
+        android:layout_alignBottom="@+id/swipeLeft"
         android:layout_toRightOf="@+id/swipeLeft"
-        android:layout_marginTop="17dp"/>
+        android:layout_marginBottom="23dp"/>
 
 
     <TextView
@@ -59,7 +60,9 @@
         android:textSize="20dp"
         android:textColor="#66FF0000"
         android:layout_toLeftOf="@+id/swipeRight"
-        android:layout_marginTop="17dp"
+        android:layout_alignBottom="@+id/swipeRight"
+        android:layout_marginBottom="23dp"
+
         />
 
     <ImageView
