@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         menuRecView = findViewById(R.id.menuRecView);
 
-    adapter = new MenuAdapter();
+        ListsDatabase.getInstance();
+    adapter = new MenuAdapter(this);
     menuRecView.setAdapter(adapter);
     menuRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 

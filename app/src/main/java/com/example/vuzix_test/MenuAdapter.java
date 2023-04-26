@@ -1,9 +1,12 @@
 package com.example.vuzix_test;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -15,8 +18,12 @@ import java.util.ArrayList;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
-
+    private Context context;
     private ArrayList<String> menuTable = new ArrayList<>();
+
+    public MenuAdapter(Context context) {
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -36,13 +43,17 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
         holder.menuParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(context, AllListsActivity.class);
+                context.startActivity(intent);
+        }
 
-            }
         });
 
-
-
     }
+
+
+
+
    @Override
     public int getItemCount() {
         return menuTable.size();
