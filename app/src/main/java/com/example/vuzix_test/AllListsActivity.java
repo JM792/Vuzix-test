@@ -19,6 +19,7 @@ public class AllListsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("on create");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_lists);
 
@@ -42,6 +43,7 @@ public class AllListsActivity extends AppCompatActivity {
         listRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
 
         adapter.setAllLists(ListsDatabase.getAll());
+
 
     }
 }

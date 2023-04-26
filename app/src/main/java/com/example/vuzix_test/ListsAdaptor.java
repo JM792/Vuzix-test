@@ -39,7 +39,7 @@ public class ListsAdaptor extends RecyclerView.Adapter<ListsAdaptor.ViewHolder>{
 
     @Override
     public int getItemCount() {
-        return 0;
+        return allLists.size();
     }
 
 

@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         menuRecView = findViewById(R.id.menuRecView);
 
-        ListsDatabase.getInstance();
+        ListsDatabase database = new ListsDatabase();
+        database.getInstance();
 
 
 

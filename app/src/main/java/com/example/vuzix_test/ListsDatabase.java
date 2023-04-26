@@ -3,13 +3,13 @@ package com.example.vuzix_test;
 import java.util.ArrayList;
 
 public class ListsDatabase {
-    private static ArrayList<ListsDatabase> database;
+//    private static ArrayList<ListsDatabase> database;
     private static ListsDatabase instance;
     private static ArrayList<List> finished;
     private static ArrayList<List>  upComing;
     private static ArrayList<List> all;
 
-    private ListsDatabase() {
+    public ListsDatabase() {
         if (null == all){
             all = new ArrayList<>();
             initData();
@@ -31,7 +31,7 @@ public class ListsDatabase {
         all.add(new List("dinner shopping list", "I'm sorry that I'm not vegan", 7,2,false));
         all.add(new List("python data analysis homework","it's toooo much and I just wanna sleep", 4,3, false));
         all.add(new List("movie nights", "my friends' wish list, not mine",6,4,false));
-
+        System.out.println("size of the list: " + all.size());
     }
 
 
@@ -44,9 +44,9 @@ public class ListsDatabase {
         return instance;
     }
 
-    public static ArrayList<ListsDatabase> getDatabase() {
-        return database;
-    }
+//    public static ArrayList<ListsDatabase> getDatabase() {
+//        return database;
+//    }
 
     public static ArrayList<List> getFinished() {
         return finished;
