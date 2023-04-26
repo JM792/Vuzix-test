@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView menuRecView;
     private MenuAdapter adapter;
     private ArrayList<String> menuTable = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         menuRecView = findViewById(R.id.menuRecView);
 
         ListsDatabase.getInstance();
+
+
+
     adapter = new MenuAdapter(this);
     menuRecView.setAdapter(adapter);
     menuRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));

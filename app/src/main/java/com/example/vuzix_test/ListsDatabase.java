@@ -10,14 +10,14 @@ public class ListsDatabase {
     private static ArrayList<List> all;
 
     private ListsDatabase() {
-        if (null != all){
+        if (null == all){
             all = new ArrayList<>();
             initData();
         }
-        if (null != finished){
+        if (null == finished){
             finished = new ArrayList<>();
         }
-        if (null != upComing){
+        if (null == upComing){
             upComing = new ArrayList<>();
         }
 

@@ -40,6 +40,17 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
 
         holder.txtAction.setText(menuTable.get(position));
+
+        if (menuTable.get(position).equals("All Lists")) {
+            holder.menuParent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                Intent intent = new Intent(context, AllListsActivity.class);
+                context.startActivity(intent);
+                }
+            });
+        }
+
 //        holder.menuParent.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
