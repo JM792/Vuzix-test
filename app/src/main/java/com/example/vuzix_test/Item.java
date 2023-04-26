@@ -5,9 +5,13 @@ import java.util.Date;
 public class Item {
 
     private int itemId;
+
+
+
+    private int ListId;
     private String name;
     private String description;
-    private Date deadline;
+
     private boolean isFinished;
 
     public Item(int itemId, String name, String description, boolean isFinished) {

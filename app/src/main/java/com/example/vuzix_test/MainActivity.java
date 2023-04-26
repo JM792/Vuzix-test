@@ -10,10 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView txtSwipeUp;
-    private ImageView swipeUp;
-    private RecyclerView listRecView;
 
+    private RecyclerView menuRecView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Animation blink = new AlphaAnimation(0.0f, 1.0f);
-        blink.setDuration(1500);
-        blink.setStartOffset(100);
-        blink.setRepeatMode(Animation.REVERSE);
-        blink.setRepeatCount(Animation.INFINITE);
+    menuRecView = findViewById(R.id.menuRecView);
 
-
-
-
-        txtSwipeUp = findViewById(R.id.txtSwipeUp);
-        swipeUp = findViewById(R.id.swipeUp);
-
-        txtSwipeUp.startAnimation(blink);
-        swipeUp.startAnimation(blink);
 
 
 

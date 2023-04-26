@@ -16,14 +16,16 @@
         app:cardCornerRadius="10dp"
         android:id="@+id/menuParent"
         >
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
             >
 
 
-
             <TextView
+                android:id="@+id/txtAction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Action"
