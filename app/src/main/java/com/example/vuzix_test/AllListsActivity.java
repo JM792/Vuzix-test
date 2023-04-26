@@ -41,7 +41,7 @@ public class AllListsActivity extends AppCompatActivity {
         listRecView.setAdapter(adapter);
         listRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
 
-        adapter.setAllLists(ListsDatabase.getInstance());
+        adapter.setAllLists(ListsDatabase.getInstance().getAll());
 
     }
 }

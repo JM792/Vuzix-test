@@ -33,7 +33,7 @@ public class ListsAdaptor extends RecyclerView.Adapter<ListsAdaptor.ViewHolder>{
         holder.listName.setText(allLists.get(position).getName());
         holder.desc.setText(allLists.get(position).getDescription());
 
-        holder.parent
+//        holder.parent
 
     }
 

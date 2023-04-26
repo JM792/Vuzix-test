@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.w3c.dom.Text;
@@ -29,27 +30,37 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        menuTable.add("All Lists");
-        menuTable.add("Up Coming");
-        menuTable.add("Finished");
 
 
         holder.txtAction.setText(menuTable.get(position));
-    }
+        holder.menuParent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-    @Override
+            }
+        });
+
+
+
+    }
+   @Override
     public int getItemCount() {
         return menuTable.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
 
+    public void setMenuTable(ArrayList<String> menuTable) {
+        this.menuTable = menuTable;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        private CardView menuParent;
         private TextView txtAction;
-        public ViewHolder(@NonNull View itemView) {
+     public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             txtAction = itemView.findViewById(R.id.txtAction);
-
+            menuParent = itemView.findViewById(R.id.menuParent);
 
 
         }
