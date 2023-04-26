@@ -13,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.w3c.dom.Text;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 
@@ -83,7 +84,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
             txtAction = itemView.findViewById(R.id.txtAction);
             menuParent = itemView.findViewById(R.id.menuParent);
-
 
         }
     }

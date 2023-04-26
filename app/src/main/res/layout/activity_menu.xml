@@ -14,7 +14,7 @@
         android:layout_margin="5dp"
         android:backgroundTint="@color/bright_orange"
         android:padding="10dp"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="2dp"
         app:cardElevation="10dp"
         android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,9 +31,10 @@
                 android:id="@+id/txtAction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/crunchy_time"
-                android:text="Action"
+                android:fontFamily="@font/knuckles"
+                android:textStyle="bold"
                 android:layout_centerInParent="true"
+                android:text="Action"
                 android:textColor="@color/white"
                 android:textSize="30dp" />
 

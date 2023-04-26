@@ -14,6 +14,7 @@
         app:cardCornerRadius="15dp"
         android:layout_margin="4dp"
         app:cardBackgroundColor="@color/coral"
+        android:padding="3dp"
         >
 
         <RelativeLayout
@@ -29,10 +30,12 @@
 
                 <TextView
                     android:id="@+id/txtListName"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="List Name:"
-                    android:fontFamily="@font/mistery"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/knuckles"
+                    android:textStyle="bold"
                     android:textColor="@color/white"
                     />
 
@@ -42,7 +45,9 @@
                     android:layout_height="wrap_content"
                     android:text="Name"
                     android:layout_toRightOf="@+id/txtListName"
-                    android:fontFamily="@font/mistery"
+                    android:layout_alignBottom="@+id/txtListName"
+                    android:fontFamily="@font/alike_angular"
+                    android:textSize="17dp"
                     android:textColor="@color/white"/>
 
                 <TextView
@@ -51,7 +56,9 @@
                     android:layout_height="wrap_content"
                     android:text="Containing items:"
                     android:layout_below ="@+id/txtListName"
-                    android:fontFamily="@font/mistery"
+                    android:fontFamily="@font/knuckles"
+                    android:textSize="20dp"
+
                     android:textColor="@color/white"
                     />
 
@@ -60,9 +67,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="# Items"
+                    android:textSize="17dp"
                     android:layout_below="@+id/listName"
                     android:layout_toRightOf="@+id/txtItemNum"
-                    android:fontFamily="@font/mistery"
+                    android:layout_alignBottom="@+id/txtItemNum"
                     android:textColor="@color/white"
                     />
 
@@ -72,21 +80,38 @@
                     android:layout_height="wrap_content"
                     android:text="Completed:"
                     android:layout_below="@+id/txtItemNum"
-                    android:fontFamily="@font/mistery"
+                    android:fontFamily="@font/knuckles"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
                     android:textColor="@color/white"
                     />
 
+
                 <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/barCompleted"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/txtListComplete"
                     android:layout_below="@+id/itemNum"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="5dp"
-                    app:trackThickness="5dp"
-                    android:textColor="@color/white"/>
+                    android:layout_alignBottom="@+id/txtListComplete"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_toRightOf="@+id/txtListComplete"
+                    app:indicatorColor="@color/blue_coral"
+                    android:progress="70"
+                    app:trackColor="@color/peach_coral"
+                    app:trackThickness="3dp" />
 
+                <TextView
+                    android:id="@+id/percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtListComplete"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/txtListComplete"
+                    android:text="100%"
 
+                    android:textColor="@color/peach_coral" />
 
 
             </RelativeLayout>
@@ -107,20 +132,36 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Description:"
-                    android:fontFamily="@font/mistery"
+                    android:fontFamily="@font/knuckles"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
                     android:textColor="@color/white"
                     />
 
-                <TextView
-                    android:id="@+id/desc"
-                    android:layout_width="wrap_content"
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/txtDesc"
-                    android:text="content"
-                    android:fontFamily="@font/mistery"
-                    android:textColor="@color/white"/>
+                    android:layout_below="@+id/txtDesc"
+                    android:padding="3dp"
+                    android:paddingBottom="5dp"
+                    >
 
 
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDesc"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:text="content"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                </ScrollView>
 
 
 
