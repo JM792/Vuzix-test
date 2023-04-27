@@ -1,10 +1,11 @@
 ### Menu
 
-- [Vuzix_test](#L9)
+- [Vuzix_test]
 - [Animation Resources]
 - [Material Design]
 - [Software Design Instruction]
-
+- [functions of the app]
+- [documentation]
 
 # Vuzix-test
 
@@ -34,17 +35,22 @@ https://m3.material.io/
 2. the left-most swipe ALWAYS means goes up to the previous app level, such as retrun to previous page or menu
 ***
 3. for readablity of the app, use core color pallet #00FF7D (green), #FFFFF (white), #F2F100(yellow), #FC101B(red), high contrast colors
+***
 4. typography: donts of Roboto family is recommended, texts no smaller than 40px (min. 25px, not recommended for large quantities of text)
+***
 5. layout with app name on the left side and rail on the bottom, ass little padding as possible to make use of the full screen <br />
 ![plot](./images/layout_example.png)
+***
 6. theme
     * light: <br />
     ![plot](./images/outdorr_light.png)
     
     * dark: <br />
-    ![plot](./images/indoor_dark.png)
+    ![plot](./images/indoor_dark.png) <br />
     dark color displayed as "no color at all"
+***
 7. icons: easily recognizable (also wehn scaled to smaller size (30 x 30 px @ 1x))
+***
 8. [voice command](https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf#page=20) that is useful for the test app: <br />
 - go left / previous (navigation of menu/list)
 - go right / next
@@ -54,6 +60,7 @@ https://m3.material.io/
 - go down (navigation of items)
 - go up
 - go home (menu)
+***
 9. [gestures for navigating the app](https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf#page=22) and corresponding functions inside code:
 - select(one finger, single tap)
 - menu(one finger one second)
@@ -84,3 +91,10 @@ https://m3.material.io/
  - how to focus single View in center of the screen
  - animation used between activities
  
+# TODO list
+-[] fix View to center (focus center)
+-[] make list full screen
+-[] interact horizontal and vertical recView (for list and items)
+-[] redesign layout (color, font, style)
+-[] add animation
+-[] add instruction steps, activated when first opening the app after download

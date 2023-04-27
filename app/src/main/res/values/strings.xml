@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Vuzix_test</string>
+    <string-array name="menu">
+        <item>All Lists</item>
+        <item>Deleted</item>
+        <item>Up Coming</item>
+        <item>Finished</item>
+    </string-array>
+
+
 </resources>

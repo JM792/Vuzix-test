@@ -14,18 +14,19 @@ public class Item {
 
     private boolean isFinished;
 
-    public Item(int itemId, String name, String description, boolean isFinished) {
+    public Item(int itemId, int listId, String name, String description, boolean isFinished) {
         this.itemId = itemId;
+        ListId = listId;
         this.name = name;
         this.description = description;
         this.isFinished = isFinished;
     }
 
-
     @Override
     public String toString() {
         return "Item{" +
                 "itemId=" + itemId +
+                ", ListId=" + ListId +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", isFinished=" + isFinished +

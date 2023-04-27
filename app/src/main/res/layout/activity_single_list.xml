@@ -8,7 +8,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/parent"
         app:cardElevation="8dp"
         app:cardCornerRadius="15dp"
@@ -29,41 +29,41 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:id="@+id/collapsedRel"
                 >
 
-                <TextView
-                    android:id="@+id/txtListName"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="List Name:"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/knuckles"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    />
+<!--                <TextView-->
+<!--                    android:id="@+id/txtListName"-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="List Name:"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:fontFamily="@font/knuckles"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    />-->
 
                 <TextView
                     android:id="@+id/listName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name"
-                    android:layout_toRightOf="@+id/txtListName"
-                    android:layout_alignBottom="@+id/txtListName"
+
+
                     android:fontFamily="@font/good_times"
-                    android:textSize="17dp"
+                    android:textSize="40px"
                     android:textColor="@color/white"/>
 
                 <TextView
                     android:id="@+id/txtItemNum"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Containing items:"
-                    android:layout_below ="@+id/txtListName"
+                    android:text="no. items:"
+                    android:layout_below ="@+id/listName"
                     android:fontFamily="@font/knuckles"
-                    android:textSize="20dp"
-
+                    android:textSize="25px"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/white"
                     />
 
@@ -72,9 +72,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="# Items"
-                    android:textSize="17dp"
+                    android:textSize="30px"
                     android:fontFamily="@font/good_times"
-                    android:layout_below="@+id/listName"
                     android:layout_toRightOf="@+id/txtItemNum"
                     android:layout_alignBottom="@+id/txtItemNum"
                     android:textColor="@color/white"
@@ -84,11 +83,12 @@
                     android:id="@+id/txtListComplete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Completed:"
+                    android:text="Progress:"
                     android:layout_below="@+id/txtItemNum"
                     android:fontFamily="@font/knuckles"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="25px"
+                    android:layout_marginTop="20dp"
                     android:textColor="@color/white"
                     />
 
@@ -97,15 +97,13 @@
                     android:id="@+id/barCompleted"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/itemNum"
-                    android:layout_alignBottom="@+id/txtListComplete"
-                    android:layout_marginLeft="3dp"
+                    android:layout_below="@+id/txtListComplete"
                     android:layout_marginBottom="9dp"
-                    android:layout_toRightOf="@+id/txtListComplete"
+
                     app:indicatorColor="@color/neon_blue"
                     android:progress="70"
                     app:trackColor="@color/neon_orange"
-                    app:trackThickness="3dp" />
+                    app:trackThickness="7px" />
 
                 <TextView
                     android:id="@+id/percentage"
@@ -135,13 +133,14 @@
 
                 <TextView
                     android:id="@+id/txtDesc"
-                    android:layout_width="130dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Description:"
                     android:fontFamily="@font/knuckles"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="25px"
                     android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
                     />
 
 
@@ -150,9 +149,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtDesc"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginEnd="9dp"
                     android:padding="3dp"
-                    android:paddingBottom="5dp"
-                    >
+                    android:paddingBottom="5dp">
 
 
                     <TextView
@@ -164,12 +165,11 @@
                         android:fontFamily="@font/good_times"
                         android:text="content"
                         android:textColor="@color/white"
-                        android:textSize="17dp" />
+                        android:textFontWeight="700"
+                        android:textSize="20px" />
 
 
                 </ScrollView>
-
-
 
 
             </RelativeLayout>
