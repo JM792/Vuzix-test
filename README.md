@@ -8,5 +8,8 @@ https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_
 
 https://github.com/material-components/material-components-android/blob/master/docs/theming/Motion.md
 
+## Android doc site:
+https://developer.android.com/develop/ui/views/animations/overview
+
 # material design
 https://m3.material.io/
