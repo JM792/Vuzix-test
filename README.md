@@ -30,7 +30,9 @@ https://m3.material.io/
 # [Software Design Instruction](https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf)
 
 1. centerring the UI elemtents (can only focus on one single element)
+***
 2. the left-most swipe ALWAYS means goes up to the previous app level, such as retrun to previous page or menu
+***
 3. for readablity of the app, use core color pallet #00FF7D (green), #FFFFF (white), #F2F100(yellow), #FC101B(red), high contrast colors
 4. typography: donts of Roboto family is recommended, texts no smaller than 40px (min. 25px, not recommended for large quantities of text)
 5. layout with app name on the left side and rail on the bottom, ass little padding as possible to make use of the full screen <br />
@@ -79,6 +81,6 @@ https://m3.material.io/
 
 # Documentation
 
- - How to focus single View in center of the screen
+ - how to focus single View in center of the screen
  - animation used between activities
- - 
+ 
