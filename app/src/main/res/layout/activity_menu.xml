@@ -7,18 +7,26 @@
     tools:context=".MenuActivity">
 
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/menuParent"
-        android:layout_width="200dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:backgroundTint="@color/bright_orange"
+        android:background="@color/invisible"
         android:padding="10dp"
-        app:cardCornerRadius="2dp"
+        app:cardCornerRadius="4dp"
         app:cardElevation="10dp"
         android:layout_centerInParent="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        app:strokeColor="@color/neon_blue"
+        app:strokeWidth="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+
+
 
 
         <RelativeLayout
@@ -35,14 +43,18 @@
                 android:textStyle="bold"
                 android:layout_centerInParent="true"
                 android:text="Action"
-                android:textColor="@color/white"
-                android:textSize="30dp" />
+                android:textColor="@color/neon_blue"
+                android:textSize="40px" />
 
 
         </RelativeLayout>
 
 
-    </androidx.cardview.widget.CardView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 
 
 </RelativeLayout>

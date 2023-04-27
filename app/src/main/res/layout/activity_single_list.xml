@@ -15,6 +15,11 @@
         android:layout_margin="4dp"
         app:cardBackgroundColor="@color/coral"
         android:padding="3dp"
+
+
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+
         >
 
         <RelativeLayout
@@ -46,7 +51,7 @@
                     android:text="Name"
                     android:layout_toRightOf="@+id/txtListName"
                     android:layout_alignBottom="@+id/txtListName"
-                    android:fontFamily="@font/alike_angular"
+                    android:fontFamily="@font/good_times"
                     android:textSize="17dp"
                     android:textColor="@color/white"/>
 
@@ -68,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:text="# Items"
                     android:textSize="17dp"
+                    android:fontFamily="@font/good_times"
                     android:layout_below="@+id/listName"
                     android:layout_toRightOf="@+id/txtItemNum"
                     android:layout_alignBottom="@+id/txtItemNum"
@@ -96,9 +102,9 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginBottom="9dp"
                     android:layout_toRightOf="@+id/txtListComplete"
-                    app:indicatorColor="@color/blue_coral"
+                    app:indicatorColor="@color/neon_blue"
                     android:progress="70"
-                    app:trackColor="@color/peach_coral"
+                    app:trackColor="@color/neon_orange"
                     app:trackThickness="3dp" />
 
                 <TextView
@@ -155,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtDesc"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/alike_angular"
+                        android:fontFamily="@font/good_times"
                         android:text="content"
                         android:textColor="@color/white"
                         android:textSize="17dp" />

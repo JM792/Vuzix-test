@@ -72,6 +72,9 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     }
 
 
+
+
+
     public void setMenuTable(ArrayList<String> menuTable) {
         this.menuTable = menuTable;
     }

@@ -1,27 +1,39 @@
+### Menu
+
+    - [Vuzix_test](./README.md?plain=1#L9)
+    - [Animation Resources](./README.md?plain=1#L15)
+    - [Material Design](./README.md?plain=1#L25)
+    - [Software Design Instruction](./README.md?plain=1#L30)
+
+
 # Vuzix-test
 
 using Vuzix Blade 2 harware settings, software instruction
 https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf
 
 
-# animation resources
+# Animation Resources
 
 https://github.com/material-components/material-components-android/blob/master/docs/theming/Motion.md
 
-## Android doc site:
+### Android Doc Site
 https://developer.android.com/develop/ui/views/animations/overview
 
-# material design
+### Common Gesture Detection
+https://developer.android.com/develop/ui/views/touch-and-input/gestures/detector#java
+
+# Material Design
 https://m3.material.io/
 
 
 
-# Software Design Instruction
+# [Software Design Instruction](https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf)
 
 1. centerring the UI elemtents (can only focus on one single element)
 2. the left-most swipe ALWAYS means goes up to the previous app level, such as retrun to previous page or menu
-3. 
-
+3. for readablity of the app, use core color pallet #00FF7D (green), #FFFFF (white), #F2F100(yellow), #FC101B(red), high contrast colors
+4. typography: donts of Roboto family is recommended, texts no smaller than 40px (min. 25px, not recommended for large quantities of text)
+5. layout with app name on the left side and rail on the bottom, ass little padding as possible to make use of the full screen
 
 
 
@@ -41,3 +53,8 @@ https://m3.material.io/
 
     ### items display
     * when clicking on item, shows up selection bar, swipe right for completed, swipe right for  quiting selection bar, return back to items view <br />
+
+
+# Documentation
+
+ - 

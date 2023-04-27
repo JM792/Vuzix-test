@@ -10,6 +10,9 @@
     <color name="orange">#A1FFA96F</color>
     <color name="bright_orange">#CEFFAE42</color>
     <color name="coral">#BEFF7F50</color>
-    <color name="blue_coral">#AFDCEC</color>
-    <color name="peach_coral">#B7FBD5AB</color>
+    <color name="neon_red">#FF3131</color>
+    <color name="neon_blue">#7AF8FF</color>
+    <color name="invisible">#00FBD5AB</color>
+    <color name="neon_purple">#D875FF</color>
+    <color name="neon_orange">#FF901B</color>
 </resources>

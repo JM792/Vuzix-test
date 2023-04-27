@@ -38,6 +38,7 @@ public class AllListsActivity extends AppCompatActivity {
         swipeUp.startAnimation(blink);
 
 
+
         adapter = new ListsAdaptor();
         listRecView.setAdapter(adapter);
         listRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));

@@ -34,6 +34,7 @@ public class ListsAdaptor extends RecyclerView.Adapter<ListsAdaptor.ViewHolder>{
         holder.desc.setText(allLists.get(position).getDescription());
 
 
+
     }
 
 
@@ -64,6 +65,7 @@ public class ListsAdaptor extends RecyclerView.Adapter<ListsAdaptor.ViewHolder>{
         listName = itemView.findViewById(R.id.listName);
         desc = itemView.findViewById(R.id.desc);
 
+        parent.requestFocus();
 
         }
 
