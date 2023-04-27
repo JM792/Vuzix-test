@@ -1,9 +1,9 @@
 ### Menu
 
-- [Vuzix_test](./README.md?plain=1#L9)
-- [Animation Resources](./README.md?plain=1#L15)
-- [Material Design](./README.md?plain=1#L25)
-- [Software Design Instruction](./README.md?plain=1#L30)
+- [Vuzix_test]()
+- [Animation Resources]()
+- [Material Design]()
+- [Software Design Instruction]()
 
 
 # Vuzix-test
