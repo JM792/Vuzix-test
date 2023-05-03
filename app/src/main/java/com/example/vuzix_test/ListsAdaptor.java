@@ -50,7 +50,7 @@ public class ListsAdaptor extends RecyclerView.Adapter<ListsAdaptor.ViewHolder>{
     }
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder{
         private TextView itemNum, listName, desc;
         private int id;
         private CardView parent;

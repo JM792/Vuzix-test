@@ -8,7 +8,7 @@ public class ItemDatabase {
     private static ArrayList<Item> finished;
 
 
-    public ItemDatabase() {
+    private ItemDatabase() {
         if(null == all){
             all = new ArrayList<>();
             initData();
@@ -33,7 +33,7 @@ public class ItemDatabase {
     }
 
 
-    public static ItemDatabase getInstance() {
+    public static synchronized ItemDatabase getInstance() {
         if (null == instance){
             instance = new ItemDatabase();
         }

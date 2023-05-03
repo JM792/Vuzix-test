@@ -90,11 +90,4 @@ https://m3.material.io/
 
  - how to focus single View in center of the screen
  - animation used between activities
- 
-# TODO list
--[] fix View to center (focus center)
--[] make list full screen
--[] interact horizontal and vertical recView (for list and items)
--[] redesign layout (color, font, style)
--[] add animation
--[] add instruction steps, activated when first opening the app after download
+ - application architecture - how it works

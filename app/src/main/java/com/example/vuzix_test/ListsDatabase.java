@@ -3,7 +3,7 @@ package com.example.vuzix_test;
 import java.util.ArrayList;
 
 public class ListsDatabase {
-//    private static ArrayList<ListsDatabase> database;
+
     private static ListsDatabase instance;
     private static ArrayList<List> finished;
     private static ArrayList<List>  upComing;
@@ -44,9 +44,6 @@ public class ListsDatabase {
         return instance;
     }
 
-//    public static ArrayList<ListsDatabase> getDatabase() {
-//        return database;
-//    }
 
     public static ArrayList<List> getFinished() {
         return finished;
