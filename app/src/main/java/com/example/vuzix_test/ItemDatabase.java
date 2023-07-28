@@ -22,11 +22,11 @@ public class ItemDatabase {
     private void initData(){
         //Item(int itemId, int listId, String name, String description, boolean isFinished)
 
-        all.add(new Item(1,1,"Hanf","it is what it is", false));
-        all.add(new Item(2,1,"flour","",false));
-        all.add(new Item(3,4,"K-Pax","",false));
-        all.add(new Item(4,4,"the thirteenth floor","sci-fi",false));
-        all.add(new Item(5,2,"chicken","orange chicken",false));
+        all.add(new Item(1,1,"Hanf","it is what it is"));
+        all.add(new Item(2,1,"flour",""));
+        all.add(new Item(3,4,"K-Pax",""));
+        all.add(new Item(4,4,"the thirteenth floor","sci-fi"));
+        all.add(new Item(5,2,"chicken","orange chicken"));
 
 
 

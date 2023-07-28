@@ -27,6 +27,7 @@ public class MenuActivity extends AppCompatActivity {
 //    menuTable.add("Finished");
 
 
+
     menuParent = findViewById(R.id.menuParent);
     txtAction = findViewById(R.id.txtAction);
 

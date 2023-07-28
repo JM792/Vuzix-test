@@ -4,23 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ItemActivity"
+    tools:context=".SingleItemActivity"
     >
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200px"
          android:id="@+id/parent"
         app:cardElevation="8dp"
         app:cardCornerRadius="5dp"
         android:focusable="true"
         android:clickable="true"
         android:checkable="true"
+        android:padding="5dp"
         android:backgroundTint="@color/coral"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
             >
 
             <TextView
@@ -47,15 +51,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:layout_below="@+id/itemDesc"
-                android:layout_alignParentEnd="true"
                 android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 />
-
-
-
-
-
 
 
 

@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private MenuAdapter adapter;
     private ArrayList<String> menuTable = new ArrayList<>();
 
+
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         menuRecView = findViewById(R.id.menuRecView);
 
-        ListsDatabase database = new ListsDatabase();
-        database.getInstance();
+//        ListsDatabase database = new ListsDatabase(this);
+//        database.getInstance();
 
 
 

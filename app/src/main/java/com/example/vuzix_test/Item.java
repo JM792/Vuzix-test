@@ -14,12 +14,12 @@ public class Item {
 
     private boolean isFinished;
 
-    public Item(int itemId, int listId, String name, String description, boolean isFinished) {
+    public Item(int itemId, int listId, String name, String description) {
         this.itemId = itemId;
         ListId = listId;
         this.name = name;
         this.description = description;
-        this.isFinished = isFinished;
+        isFinished = false;
     }
 
     @Override

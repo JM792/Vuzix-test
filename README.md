@@ -91,3 +91,43 @@ https://m3.material.io/
  - how to focus single View in center of the screen
  - animation used between activities
  - application architecture - how it works
+
+
+# Android Studio quick beginner reference
+## Font Size
+ - sp: scaled pixels, adjusted accroding to the current density and the user preferable font size
+ - dp:
+ - px:
+
+
+ test size preset:
+
+
+
+## Grundidee der App
+ Von den Industrie- und Militärbereichen bis zur alltäglichen Unterhaltung hilft uns die erweitere Realität(Augmented Reality) schon auf ganz reichliche Art und Weise. Dazu werden für verschiedene Nutzbedingungen und -bedarf
+
+## Emulator Set-Up
+für die Hardware-Simulation braucht man zusätzlich zu den bereit gestellten Geräten noch die Source Datei für die Vizux Blade 2 aus [der offizielle Website](http://files.vuzix.com/Content/Upload/vuzix-blade_v2.xml) abholen. Man muss außerdem in <Tools-><SDK Manager> gehen und die empfehlende System Image herunterladen.  Für die System-Image wählen wir laut [der Seite](https://intercom.help/vuzix/en/articles/6233028-creating-a-device-profile)die API Android 11.0 (R) aus und die API installieren.
+In Design Mode muss man das richtige "Reference Device" hinzufügen (Add Device - Vuzix Blade)
+
+## Grundlegende Design Set-up
+
+### Textgröße
+
+
+### Textfarben
+
+
+### Animation
+- wenn eine Liste gelöscht wird (ausgeblendet, durchgestriechen)
+- wenn eine Liste erledig wird (bewegt sich zum Ende der Liste)
+
+- wenn man nach links oder rechts das Element/View swipt, wird das Element auf der Mitte des Bildschirms verankert/fixiert
+    Realisierung:
+### Layout
+
+- Menu
+- Editor (um Liste und Elemente hinzuzufügen)
+- Up Coming
+- Deleted

@@ -63,9 +63,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
     }
 
-
-
-
    @Override
     public int getItemCount() {
         return menuTable.size();

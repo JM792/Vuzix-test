@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
 
-
+<!--change into swipe mode-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecView"
         android:layout_width="match_parent"

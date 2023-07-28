@@ -17,7 +17,19 @@ public class List {
         this.description = description;
         this.itemNum = itemNum;
         this.listId = listId;
-        this.isFinished = isFinished;
+        isFinished = false;
+    }
+
+
+    @Override
+    public String toString() {
+        return "List{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", itemNum=" + itemNum +
+                ", listId=" + listId +
+                ", isFinished=" + isFinished +
+                '}';
     }
 
     public String getDescription() {

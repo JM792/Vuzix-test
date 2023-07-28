@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 public class AllListsActivity extends AppCompatActivity {
 
-    private ImageView swipeUp;
-    private TextView txtSwipeUp;
+//    private ImageView swipeUp;
+//    private TextView txtSwipeUp;
     private RecyclerView listRecView;
     private ListsAdaptor adapter;
 
@@ -24,26 +24,26 @@ public class AllListsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_all_lists);
 
 
-        swipeUp = findViewById(R.id.swipeUp);
-        txtSwipeUp = findViewById(R.id.txtSwipeUp);
+//        swipeUp = findViewById(R.id.swipeUp);
+//        txtSwipeUp = findViewById(R.id.txtSwipeUp);
 
-        listRecView = findViewById(R.id.listRecView);
+//        listRecView = findViewById(R.id.listRecView);
+//
+//        Animation blink = new AlphaAnimation(0.0f, 1.0f);
+//        blink.setDuration(1500);
+//        blink.setStartOffset(100);
+//        blink.setRepeatMode(Animation.REVERSE);
+//        blink.setRepeatCount(Animation.INFINITE);
+//        txtSwipeUp.startAnimation(blink);
+//        swipeUp.startAnimation(blink);
 
-        Animation blink = new AlphaAnimation(0.0f, 1.0f);
-        blink.setDuration(1500);
-        blink.setStartOffset(100);
-        blink.setRepeatMode(Animation.REVERSE);
-        blink.setRepeatCount(Animation.INFINITE);
-        txtSwipeUp.startAnimation(blink);
-        swipeUp.startAnimation(blink);
 
 
-
-        adapter = new ListsAdaptor();
+        adapter = new ListsAdaptor(this);
         listRecView.setAdapter(adapter);
         listRecView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
 
-        adapter.setAllLists(ListsDatabase.getAll());
+        adapter.setAllLists(ListsDatabase.getInstance().getAll());
 
 
     }

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Vuzix_test"
         tools:targetApi="31">
         <activity
-            android:name=".ItemActivity"
+            android:name=".SingleItemActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
