@@ -9,8 +9,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/menuParent"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_width="650px"
+        android:layout_height="230px"
         android:layout_margin="5dp"
         android:background="@color/invisible"
         android:padding="10dp"
@@ -39,11 +39,14 @@
                 android:id="@+id/txtAction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="80px"
                 android:layout_centerInParent="true"
                 android:autoSizePresetSizes="@arrays/autosized_text_sizes/medium"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/knuckles"
                 android:text="Action"
+
                 android:textColor="@color/neon_blue"
                 android:textStyle="bold" />
 

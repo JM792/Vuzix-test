@@ -27,6 +27,11 @@ https://developer.android.com/develop/ui/views/touch-and-input/gestures/detector
 https://m3.material.io/
 
 
+# Threading (for online database)
+https://developer.android.com/topic/performance/threads
+https://developer.android.com/guide/components/processes-and-threads
+thread safety: Thread safety is the avoidance of data races--situations in which data are set to either correct or incorrect values, depending upon the order in which multiple threads access and modify the data.
+
 
 # [Software Design Instruction](https://d2iankuf53zudv.cloudfront.net/Content/Upload/PDFs/Vuzix_Blade_UX_Design_Guidelines_v2.pdf)
 

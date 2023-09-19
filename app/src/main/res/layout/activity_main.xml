@@ -8,14 +8,25 @@
 
 
 <!--change into swipe mode-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/menuRecView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-       />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/menuRecView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--       />-->
 
-
+ <androidx.viewpager.widget.ViewPager
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/pager"
+     >
+     <androidx.viewpager.widget.PagerTitleStrip
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity = "top"/>
+     
+     
+ </androidx.viewpager.widget.ViewPager>
 
 
 
